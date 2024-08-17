@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Антикафе</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        section {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 30%;
+            height: auto;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .btn-instagram {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #E1306C;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-instagram:hover {
+            background-color: #C4275B;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Добро пожаловать в наше Антикафе!</h1>
+        </header>
+
+        <section>
+            <h2>Что мы предлагаем:</h2>
+            <p>В нашем антикафе вы найдете PlayStation, мини-кинотеатр, мини-кафе, а также множество застольных игр. Это идеальное место для отдыха и веселья с друзьями!</p>
+        </section>
+
+        <section>
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <!-- Вставьте сюда ссылки на изображения -->
+                <img src="playstation.jpg" alt="PlayStation">
+                <img src="mini-cinema.jpg" alt="Мини-кинотеатр">
+                <img src="mini-cafe.jpg" alt="Мини-кафе">
+                <img src="board-games.jpg" alt="Застольные игры">
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Контакты</h2>
+            <p>Телефон: 87054607550</p>
+            <a href="https://www.instagram.com/keytostarandmoon" class="btn-instagram">Следите за нами в Instagram</a>
+        </section>
+    </div>
+</body>
+</html>
