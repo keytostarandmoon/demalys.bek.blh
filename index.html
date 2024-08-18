@@ -22,26 +22,53 @@
         header {
             text-align: center;
             padding: 50px 0;
-            background-color: #1e1e1e; /* Темный фон для заголовка */
+            background-image: url('A_minimalist_dark-themed_background_for_a_website_.png'); /* Фон из изображения */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #ffffff; /* Цвет текста на фоне */
             border-bottom: 1px solid #333;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон при наведении */
         }
 
         header h1 {
             margin: 0;
             font-size: 36px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Тень для текста */
+            animation: fadeIn 2s ease-in-out; /* Анимация появления текста */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         section {
             margin: 20px 0;
-            background-color: #1e1e1e; /* Темный фон для секций */
+            background: linear-gradient(135deg, #1e1e1e, #333); /* Градиентный фон для секций */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02); /* Легкое увеличение при наведении */
         }
 
         section img {
             max-width: 100%;
             border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section img:hover {
+            transform: scale(1.05); /* Увеличение изображения при наведении */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Тень при наведении */
         }
 
         .gallery {
@@ -73,19 +100,22 @@
             color: white;
             text-decoration: none;
             border-radius: 4px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .btn-instagram:hover {
             background-color: #C4275B;
+            transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
         }
 
         a {
             color: #bb86fc; /* Светло-фиолетовый цвет ссылок */
+            transition: color 0.3s ease;
         }
 
         a:hover {
             color: #3700b3; /* Цвет при наведении на ссылку */
+            text-decoration: underline;
         }
     </style>
 </head>
