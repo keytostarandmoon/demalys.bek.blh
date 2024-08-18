@@ -9,7 +9,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212; /* Темный фон */
+            background-image: url('A_minimalist_dark-themed_background_for_a_website_.png'); /* Используем изображение как фон */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             color: #e0e0e0; /* Светлый текст */
         }
 
@@ -17,22 +20,16 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон для контейнера */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         header {
             text-align: center;
             padding: 50px 0;
-            background-image: url('A_minimalist_dark-themed_background_for_a_website_.png'); /* Фон из изображения */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
             color: #ffffff; /* Цвет текста на фоне */
             border-bottom: 1px solid #333;
-            transition: background-color 0.3s ease;
-        }
-
-        header:hover {
-            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон при наведении */
         }
 
         header h1 {
@@ -49,7 +46,7 @@
 
         section {
             margin: 20px 0;
-            background: linear-gradient(135deg, #1e1e1e, #333); /* Градиентный фон для секций */
+            background: rgba(30, 30, 30, 0.8); /* Полупрозрачный темный фон для секций */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
